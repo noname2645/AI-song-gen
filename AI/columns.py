@@ -1,10 +1,15 @@
+# Import necessary libraries
 import pandas as pd
 
-# Load the dataset
-df = pd.read_csv(r"D:\AI song generation\AI\scrapped-lyrics-from-6-genres\lyrics-data.csv")
+# Load the CSV files into pandas DataFrames
+go_emotions_train_df = pd.read_csv('go_emotions_preprocessed.csv')
+daily_dialog_train_df = pd.read_csv('daily_dialog_preprocessed.csv')
 
-# Check column names
-print(df.columns)
+# Print the columns of the dataframes to inspect them
+print("GoEmotions columns:")
+print(go_emotions_train_df.columns)
 
-column_names = df.columns.tolist()
-print(column_names)
+print("\nDailyDialog columns:")
+print(daily_dialog_train_df.columns)
+
+
